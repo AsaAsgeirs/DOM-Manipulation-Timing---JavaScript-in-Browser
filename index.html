@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+	<div id="wrapper">
+	    <header>
+
+	    	<div id="page-banner">
+	    		<h1 class="grocery">Grocery List</h1>
+<!-- I had to change the <span> into <em> as the text got the same animation as the text Animation -->
+				<div class="clock">
+					<em class="clock-time"></em>
+					<em class="clock-ampm"></em>
+				</div>
+
+          <form id="search-list">
+            <input type="text" placeholder="Search your list ..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="shopping-list">
+	    	<h2 class="title">I need:</h2>
+	    	<ul>
+	    		<li> <!-- I had to change the <span> into <div> as the text disappeared when I made the text Animation -->
+	    			<div class="name">Milk</div>
+	    			<div class="delete">delete</div>
+	    		</li>
+	    		<li>
+	    			<div class="name">Eggs</div>
+	    			<div class="delete">delete</div>
+	    		</li>
+	    		<li>
+	    			<div class="name">Cheese</div>
+	    			<div class="delete">delete</div>
+	    		</li>
+	    		<li>
+	    			<div class="name">Ham</div>
+	    			<div class="delete">delete</div>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-list">
+			<input type="checkbox" id="hide"/>
+			<label for="hide">Hide List Items</label>
+	    	<input type="text" placeholder="What groceries do you need..." />
+	    	<button>Add</button>
+	    </form>
+
+    </div>
+	<script src="main.js"></script>
+</body>
+</html>

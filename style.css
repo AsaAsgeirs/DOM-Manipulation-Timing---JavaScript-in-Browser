@@ -1,0 +1,250 @@
+body {
+  font-family: Tahoma;
+  color: #444;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.818);
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 0 0 20px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+#page-banner {
+  background: rgb(147, 147, 147);
+  padding: 10px 0;
+}
+/*Text Animation */
+#page-banner h1{
+    color: white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+    /*  width: 100%;
+    text-align: center;
+    margin: 10px 0;*/
+  }
+  
+  span{
+      opacity: 0;
+      transition: all 0.5s ease;
+      transform: translateY(50px);
+      display: inline-block;
+  }
+  
+  span.fade{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+
+#page-banner input {
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #444;
+}
+/* Text Animation code ends */
+
+/* Clock */
+.clock{
+    background: #333333;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.clock-time,
+.clock-ampm {
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 20px;
+    color: #eeeeee;
+}
+
+.clock-time{
+    font-size: 48px;
+}
+/* Clock code ends */
+
+#shopping-list,
+#add-list,
+#tabbed-content {
+  margin: 30px;
+}
+
+#shopping-list ul,
+#tabbed-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#shopping-list li {
+  padding: 20px;
+  border-left: 5px solid rgb(255, 255, 255);
+  margin: 20px 10px;
+}
+
+#shopping-list li:hover {
+  border-color: #204dbfd1;
+}
+
+#shopping-list h2{ /* made the "I need" text same as banner */
+    color: rgb(179, 179, 179);
+}
+
+#shopping-list div{ /* made the font color white and larger */
+    color: white;
+    font-size: 20px;
+}
+
+.delete {
+  float: right;
+  background: #204dbfd1;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.delete:hover {
+  background: #204dbf;
+}
+
+#add-list {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#add-list input {
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  width: 300px;
+  float: left;
+}
+
+#add-list button {
+  border: 1px solid #204dbfd1;
+  background: #204dbfd1;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  width: 100px;
+  float: left;
+  margin: 20px 0;
+  border-left: 0;
+  color: white;
+}
+
+#add-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#add-list #hide {
+  width: 30px;
+}
+
+#add-list label {
+  line-height: 52px;
+  color: rgb(179, 179, 179); /* made the "Hide list iteams" text same as banner */
+}
+
+/* Animation page Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(225, 225, 225, 1, 0.05);
+}
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+#progressbar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+/* Animation page Scroll Bar Code ends */
+
+/*
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#tabbed-content .tab{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+#tabbed-content .tab.active{
+    display: block;
+}
+*/
