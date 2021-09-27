@@ -134,7 +134,7 @@ addForm.addEventListener('submit', function(e){
 
 /*
 X   1. Use a few animations made with CSS transitions (use of JS to control them encouraged)
-2. Display a loading screen for a couple seconds using setTimeout
+X   2. Display a loading screen for a couple seconds using setTimeout
 X   3. Display a clock or timer on the screen (use setInterval)
 */
 
